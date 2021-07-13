@@ -95,12 +95,6 @@ class _ColorBox extends StatelessWidget {
         decoration: BoxDecoration(
           color: this.color,
           borderRadius: BorderRadius.circular(this.radius),
-          // gradient: LinearGradient(
-          //   colors: [
-          //     Color.fromRGBO(239, 98, 188, 1),
-          //     Color.fromRGBO(241, 142, 172, 1)
-          //   ],
-          // ),
         ),
       ),
     );
