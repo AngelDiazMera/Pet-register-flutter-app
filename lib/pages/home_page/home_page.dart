@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:pet_register/pages/pets_page_body.dart';
-import 'package:pet_register/pages/register_body.dart';
+import 'package:pet_register/pages/pets_page_body/pets_page_body.dart';
+import 'package:pet_register/pages/register_body/register_body.dart';
 
 import 'package:pet_register/widgets/background.dart';
 

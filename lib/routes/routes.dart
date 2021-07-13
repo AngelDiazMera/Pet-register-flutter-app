@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:pet_register/pages/home_page.dart';
+import 'package:pet_register/pages/home_page/home_page.dart';
 
 // This function returns the routes of the app
 Map<String, WidgetBuilder> getApplicationRoutes() {

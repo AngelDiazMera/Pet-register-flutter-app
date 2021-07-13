@@ -1,36 +1,34 @@
 import 'package:flutter/material.dart';
 
 class RegisteredContainer extends StatelessWidget {
-  final Map<String, dynamic> registro;
+  final Map<String, dynamic> register;
 
-  const RegisteredContainer({Key key, @required this.registro})
+  const RegisteredContainer({Key key, @required this.register})
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    Widget personaImg = Image(
+    Widget personImg = Image(
       image: AssetImage(
           // Decide si usar imagen de hombre o de mujer
-          this.registro['sexo'] == 'hombre'
+          this.register['sex'] == 'hombre'
               ? 'assets/user.png'
               : 'assets/woman.png'),
       fit: BoxFit.fill,
     );
 
-    Widget descripcion = Text(
-      '${this.registro['nombre']} ${this.registro['apellido']}\n' +
-          // Control de 'año' y 'años' para [erspma]
-          '${this.registro['edad']} ${(this.registro['edad'] > 1) ? 'años' : 'año'} de edad.\n\n' +
-          // Decide si poner 'Dueño' o 'Dueña'
-          '${this.registro['sexo'] == 'hombre' ? 'Dueño' : 'Dueña'} de un ${this.registro['tipoMascota']}\n' + // tipo es string ('perro', 'gato')
-          'de ${this.registro['edadMascota']} ' +
-          // Control de 'año' y 'años' para mascota
-          '${(this.registro['edadMascota'] > 1) ? 'años' : 'año'} llamado:\n',
+    Widget description = Text(
+      '${this.register['name']} ${this.register['last']}\n' +
+          '${this.register['age']} ${(this.register['age'] > 1) ? 'años' : 'año'} de edad.\n\n' +
+          '${this.register['sex'] == 'hombre' ? 'Dueño' : 'Dueña'} de un ${this.register['pet']['type']}\n' +
+          'de ${this.register['pet']['age']} ' +
+          '${(this.register['pet']['age'] > 1) ? 'años' : 'año'} llamado:\n',
       style: TextStyle(fontSize: 14),
     );
 
     return Column(
       children: [
+        // Person container
         Container(
           margin: EdgeInsets.symmetric(horizontal: 35),
           constraints: BoxConstraints(maxWidth: 260, maxHeight: 144),
@@ -45,12 +43,13 @@ class RegisteredContainer extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                personaImg,
-                descripcion,
+                personImg,
+                description,
               ],
             ),
           ),
         ),
+        // Container of the pet
         Container(
           margin: EdgeInsets.only(bottom: 25),
           constraints: BoxConstraints(maxWidth: 160, maxHeight: 110),
@@ -68,12 +67,12 @@ class RegisteredContainer extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Image(
-                  image: AssetImage(this.registro['tipoMascota'] == 'perro'
+                  image: AssetImage(this.register['pet']['type'] == 'perro'
                       ? 'assets/dog.png'
                       : 'assets/cat.png'),
                   height: 65,
                 ),
-                Text(this.registro['nombreMascota'],
+                Text(this.register['pet']['name'],
                     style: TextStyle(fontSize: 14)),
               ],
             ),

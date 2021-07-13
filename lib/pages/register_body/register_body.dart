@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:pet_register/widgets/blur_shape.dart';
-import 'package:pet_register/widgets/form_pets.dart';
+import 'package:pet_register/pages/register_body/widgets/form_pets.dart';
 import 'package:pet_register/widgets/pets_image.dart';
 
 class RegisterBody extends StatelessWidget {
-  PageController pageController;
-
+  PageController pageController; // Atributte to change the page
+  // Constructor
   RegisterBody({Key key, @required this.pageController}) : super(key: key);
 
   @override
