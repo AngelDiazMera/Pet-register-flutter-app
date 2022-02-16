@@ -1,16 +1,26 @@
-# pet_register
+# Pet registration app
 
-A new Flutter project.
+Pet registration mobile app with Flutter & Firebase firestore
 
-## Getting Started
+<div align="center"> 
+  <video autoplay src="https://user-images.githubusercontent.com/47422372/154283204-eea1b5e7-5ba1-4a34-b6fd-01e250120d53.mp4">
+</div>
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Contributing
+Want to contribute? Great!
+Pull requests are allowed ;)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<div align="center"> 
+  
+  <div>
+    <img src="http://ForTheBadge.com/images/badges/built-with-love.svg" alt="Built with love">
+    <a href="https://github.com/AngelDiazMera/">
+      <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="My profile">
+    </a> 
+  </div>
+</div>
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
