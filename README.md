@@ -7,10 +7,10 @@
 
 Pet registration mobile app with Flutter & Firebase firestore
 
+Code explanation here https://youtu.be/UvJRaxSCFU4
+
 <div align="center"> 
   <video autoplay src="https://user-images.githubusercontent.com/47422372/154283204-eea1b5e7-5ba1-4a34-b6fd-01e250120d53.mp4">
-    
-  Explanation here https://youtu.be/UvJRaxSCFU4
 </div>
 
 
